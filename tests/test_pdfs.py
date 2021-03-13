@@ -1,4 +1,4 @@
-from democritus_pdfs import pdf_read
+from d8s_pdfs import pdf_read
 
 
 def test_pdf_read_docs_1():
