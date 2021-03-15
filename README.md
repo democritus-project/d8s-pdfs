@@ -1,8 +1,8 @@
 # Democritus Pdfs
 
-[![PyPI](https://img.shields.io/pypi/v/democritus-pdfs.svg)](https://pypi.python.org/pypi/democritus-pdfs)
-[![Build Status](https://travis-ci.com/democritus-project/democritus-pdfs.svg?branch=master)](https://travis-ci.com/democritus-project/democritus-pdfs)
-[![codecov](https://codecov.io/gh/democritus-project/democritus-pdfs/branch/master/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/democritus-pdfs)
+[![PyPI](https://img.shields.io/pypi/v/d8s-pdfs.svg)](https://pypi.python.org/pypi/d8s-pdfs)
+[![Build Status](https://travis-ci.com/democritus-project/d8s-pdfs.svg?branch=main)](https://travis-ci.com/democritus-project/d8s-pdfs)
+[![codecov](https://codecov.io/gh/democritus-project/d8s-pdfs/branch/main/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/d8s-pdfs)
 
 Democritus functions<sup>[1]</sup> for working with PDFs.
 
