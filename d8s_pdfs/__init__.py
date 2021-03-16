@@ -4,9 +4,9 @@ except ImportError:
     from importlib_metadata import PackageNotFoundError, version  #type: ignore
 
 try:
-    __version__ = version('democritus_pdfs')
+    __version__ = version('d8s_pdfs')
 except PackageNotFoundError:
-    message = 'Unable to find a version number for "democritus_pdfs". This likely means the library was not installed properly. Please re-install it and, if the problem persists, raise an issue here: https://github.com/democritus-project/democritus-pdfs/issues.'
+    message = 'Unable to find a version number for "d8s_pdfs". This likely means the library was not installed properly. Please re-install it and, if the problem persists, raise an issue here: https://github.com/democritus-project/democritus-pdfs/issues.'
     print(message)
 
 __author__ = '''Floyd Hightower'''

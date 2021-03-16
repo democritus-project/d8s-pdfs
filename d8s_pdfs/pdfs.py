@@ -1,9 +1,9 @@
 import os
 from typing import Iterable
 
-from democritus_file_system import file_write, temp_dir_create
-from democritus_networking import get
-from democritus_urls import is_url, url_file_name
+from d8s_file_system import file_write, temp_dir_create
+from d8s_networking import get
+from d8s_urls import is_url, url_file_name
 import PyPDF2
 
 
