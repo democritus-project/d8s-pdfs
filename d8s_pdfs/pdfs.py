@@ -13,7 +13,7 @@ def pdf_read(pdf_path: str) -> Iterable[str]:
 
     # check if the pdf_path is a url
     if is_url(pdf_path):
-        temp_file = tempfile.TemporaryFile()
+        temp_file = tempfile.TemporaryFile()  # pylint: disable=R1732
         temp_file_path = str(temp_file.name)
         file_write(temp_file_path, get(pdf_path, process_response_as_bytes=True))
         pdf_path = temp_file_path
@@ -23,7 +23,7 @@ def pdf_read(pdf_path: str) -> Iterable[str]:
             pdf = PyPDF2.PdfFileReader(f)
         except PyPDF2.utils.PdfReadError as e:
             message = 'Unable to read the pdf at {}: {}'.format(pdf_path, e)
-            raise RuntimeError(message)
+            raise RuntimeError(message) from e
         else:
             for i in range(0, pdf.numPages):
                 page = pdf.getPage(i)
@@ -31,4 +31,4 @@ def pdf_read(pdf_path: str) -> Iterable[str]:
                 yield page_content
 
     if temp_file is not None:
-        result = temp_file.close()
+        temp_file.close()
